@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Vipul</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="npstyle.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.17.0/math.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"></script>
+  <script defer src="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css"></script>
+
+  <!-- below link is for icons -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Actalent</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+        <li>
+          <a href="#content">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#table">Table</a>
+        </li>
+        <li>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Apps</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="#calculator">Calculator</a>
+            </li>
+            <li>
+              <a href="#stopwatch">Stopwatch</a>
+            </li>
+            <li>
+              <a href="#clock">Digital Clock</a>
+            </li>
+            <li>
+              <a href="#weather">Real-time weather</a>
+            </li>
+            <li>
+              <a href="#counter">Counter</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-left"></i>
+            <span></span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="loginPage.html">Login</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="SignUpPage.html">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="bgimage" id="home">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+              <h2 class="hero_title">Hi, it's me Vipul Sawant</h2>
+              <p class="hero_desc">Frontend Designer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container mt-4 pt-4">
+          <div class="row mt-4">
+            <div class="col-lg-4">
+              <img src="vipul.jpeg" class="imageAboutPage" alt="">
+            </div>
+
+            <div class="col-lg-8">
+              <br>
+              <br>
+              <br>
+              <br>
+              <h1 class="text-center">About Me</h1>
+              <br>
+              <p> My name is Vipul Sawant. I have studied Electronics and Telecommunication Engineering from Modern
+                Education Society's College of Engineering. I have completed my graduation in 2023.
+                I am familar with Programming languages like C, Embedded C, C++, Java, Python form which C++ is my go to
+                language. I am also familar with Data Structures and Algorithms and the concepts of OOPS. My strong hold
+                is my Problem Solving skills and ability to learn new things efficiently and with ease.
+              </p>
+
+            </div>
+          </div>
+      </section>
+
+      <!-- services section-->
+      <section id="languages">
+        <div class="container">
+          <h1 class="text-center">Languages</h1>
+          <div class="row">
+            <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                <div class="card-body">
+                  <img class="card-img-top" src="c++-logo-vector.svg" alt="Card image"
+                    style="width:40%; margin-left: 80px;margin-top: 20px;">
+                  <h4 class="card-title mt-3">C++</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                <div class="card-body">
+                  <img class="card-img-top" src="embeded-c.png" alt="Card image"
+                    style="width:40%; margin-left: 80px;margin-top: 30px;">
+                  <h4 class="card-title mt-3">Embedded C</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                <div class="card-body">
+                  <img class="card-img-top" src="java.png" alt="Card image"
+                    style="width:35%; margin-left: 80px;margin-top: 15px;">
+                  <h4 class="card-title mt-3">Java</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                <div class="card-body">
+                  <img class="card-img-top" src="python.png" alt="Card image"
+                    style="width:40%; margin-left: 80px;margin-top: 20px;">
+                  <h4 class="card-title mt-3">Python</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                <div class="card-body">
+                  <img class="card-img-top" src="html-5-logo.svg" alt="Card image"
+                    style="width:40%; margin-left: 80px;margin-top: 20px;">
+                  <h4 class="card-title mt-3">HTML</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+              <div class="card servicesText">
+                <div class="card-body">
+                  <img class="card-img-top" src="CSS3_logo.svg.png" alt="Card image"
+                    style="width:40%; margin-left: 80px;margin-top: 20px;">
+                  <h4 class="card-title mt-3">CSS</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <br>
+      <!-- portfolio section-->
+      <section id="projects">
+        <div class="container mt-3">
+          <h1 class="text-center">Projects</h1>
+          <div class="row">
+            <div class="col-lg-4 mt-4">
+              <div class="card">
+                <img class="card-img-top" src="folio-1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Project 1: Coding for project Smart gate system</h4>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                <img class="card-img-top" src="folio-2.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Project 2: Coding for project Obstacle detection system for blind</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                <img class="card-img-top" src="folio-3.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Project 3: Coding for project Wall climbing robot</h4>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+
+        </div>
+      </section>
+      <br>
+      <br>
+      <!--Table-->
+      <section id="table">
+        <br>
+        <h1 class="text-center">Table</h1>
+        <table id="example" class="table table-striped table-bordered" style="width:100%">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Number of projects</th>
+              <th>date</th>
+              <th>Language</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://github.com/Shashikant6633/Portfolio_Website" style="color: blue;" target="_blank">Shashikant Bhagwan Shinde</a></td>
+              <td>Graduate Trainee</td>
+              <td>Pune</td>
+              <td>6</td>
+              <td>2011-04-25</td>
+              <td>JS</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Desaboyina Laxmi Tejeswini</a></td>
+              <td>Engineer-Software</td>
+              <td>Hyderabad</td>
+              <td>7</td>
+              <td>2011-07-25</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/Dipakborbale/Portfolio_website" target="_blank" style="color: blue;">Dipak Arun Borbale</a></td>
+              <td>Graduate Trainee</td>
+              <td>Pune</td>
+              <td>2</td>
+              <td>2009-01-12</td>
+              <td>HTML</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">G Sumedh</a></td>
+              <td>Senior Software Engineer</td>
+              <td>Hyderabad</td>
+              <td>20</td>
+              <td>2012-03-29</td>
+              <td>C++</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Jaideep Reddy Kolan</a></td>
+              <td>Graduate Trainee</td>
+              <td>Hyderabad</td>
+              <td>4</td>
+              <td>2008-11-28</td>
+              <td>C#</td>
+            </tr>
+            <tr>
+              <td>
+                <Losara href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Losara Ambika</a>
+              </td>
+              <td>Senior Software Engineer</td>
+              <td>Hyderabad</td>
+              <td>15</td>
+              <td>2012-12-02</td>
+              <td>JAVA</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Manisri, Chippa</a></td>
+              <td>Graduate Trainee</td>
+              <td>Hyderabad</td>
+              <td>5</td>
+              <td>2012-08-06</td>
+              <td>Python</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Narendar Kota</a></td>
+              <td>Senior Delivery Manager</td>
+              <td>Hyderabad</td>
+              <td>50</td>
+              <td>2010-10-14</td>
+              <td>SWIFT</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Nitesh Kumar</a></td>
+              <td>Technical Lead</td>
+              <td>Bangalore</td>
+              <td>9</td>
+              <td>2009-09-15</td>
+              <td>R</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Pai, Sushil</a></td>
+              <td>Project Manager</td>
+              <td>Bangalore</td>
+              <td>23</td>
+              <td>2008-12-13</td>
+              <td>RUBY</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Pranay, Manthri</a></td>
+              <td>Graduate Trainee</td>
+              <td>Hyderabad</td>
+              <td>5</td>
+              <td>2008-12-19</td>
+              <td>GO</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/tejas-4502/POC-Portfolio-Dev" style="color: blue;" target="_blank">Tejas Rohidas Sonawane</a></td>
+              <td>Graduate Trainee</td>
+              <td>Pune</td>
+              <td>8</td>
+              <td>2013-03-03</td>
+              <td>HTML</td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/vipulsawant033/Portfolio_Vipul" style="color: blue;" target="_blank">Vipul Sawant</a></td>
+              <td>Graduate Trainee</td>
+              <td>Pune</td>
+              <td>10</td>
+              <td>2008-10-16</td>
+              <td>JS</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Sai Sahithi, Chowdarapu</a></td>
+              <td>Graduate Trainee</td>
+              <td>Hyderabad</td>
+              <td>2</td>
+              <td>2012-12-18</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td><a href="#" data-toggle="modal" data-target="#largeModal1" style="color: blue;">Sindhuja, Dasoju</a></td>
+              <td>Graduate Trainee</td>
+              <td>Hyderabad</td>
+              <td>1</td>
+              <td>2010-03-17</td>
+              <td>HTML</td>
+            </tr>
+
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Number of projects</th>
+              <th>date</th>
+              <th>Language</th>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <!-- modal -->
+      <div class="modal fade" id="largeModal1" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <!-- carousel -->
+              <div id='carouselExampleIndicators' class='carousel slide' data-ride='carousel'>
+                <ol class='carousel-indicators'>
+                  <li data-target='#carouselExampleIndicators' data-slide-to='0' class='active'></li>
+                  <li data-target='#carouselExampleIndicators' data-slide-to='1'></li>
+                  <li data-target='#carouselExampleIndicators' data-slide-to='2'></li>
+                </ol>
+                <div class='carousel-inner'>
+                  <div class='carousel-item active'>
+                    <img class='img-size'
+                      src='slide 1.jpg'
+                      alt='First slide' />
+                  </div>
+                  <div class='carousel-item'>
+                    <img class='img-size'
+                      src='slide 2.jpg'
+                      alt='Second slide' />
+                  </div>
+                  <div class='carousel-item'>
+                    <img class='img-size'
+                      src='slide 3.jpg'
+                      alt='Third slide' />
+                  </div>
+                </div>
+                <a class='carousel-control-prev' href='#carouselExampleIndicators' role='button' data-slide='prev'>
+                  <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                  <span class='sr-only'>Previous</span>
+                </a>
+                <a class='carousel-control-next' href='#carouselExampleIndicators' role='button' data-slide='next'>
+                  <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                  <span class='sr-only'>Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="calculator">
+        <div class="container1" style="margin-top: 150px">
+          <h1>Calculator </h1>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <form>
+            <input readonly id="display1" type="text" class="form-control-lg text-right" />
+            <input readonly id="display2" type="text" class="form-control-lg text-right" />
+          </form>
+
+          <div class="d-flex justify-content-between button-row">
+            <button id="left-parenthesis" type="button" class="operator-group">
+              &#40;
+            </button>
+            <button id="right-parenthesis" type="button" class="operator-group">
+              &#41;
+            </button>
+            <button id="square-root" type="button" class="operator-group">
+              &#8730;
+            </button>
+            <button id="square" type="button" class="operator-group">
+              &#120;&#178;
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-between button-row">
+            <button id="clear" type="button">&#67;</button>
+            <button id="backspace" type="button">&#9003;</button>
+            <button id="ans" type="button" class="operand-group">
+              &#65;&#110;&#115;
+            </button>
+            <button id="divide" type="button" class="operator-group">&#247;</button>
+          </div>
+
+          <div class="d-flex justify-content-between button-row">
+            <button id="seven" type="button" class="operand-group">&#55;</button>
+            <button id="eight" type="button" class="operand-group">&#56;</button>
+            <button id="nine" type="button" class="operand-group">&#57;</button>
+            <button id="multiply" type="button" class="operator-group">
+              &#215;
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-between button-row">
+            <button id="four" type="button" class="operand-group">&#52;</button>
+            <button id="five" type="button" class="operand-group">&#53;</button>
+            <button id="six" type="button" class="operand-group">&#54;</button>
+            <button id="subtract" type="button" class="operator-group">
+              &#8722;
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-between button-row">
+            <button id="one" type="button" class="operand-group">&#49;</button>
+            <button id="two" type="button" class="operand-group">&#50;</button>
+            <button id="three" type="button" class="operand-group">&#51;</button>
+            <button id="add" type="button" class="operator-group">&#43;</button>
+          </div>
+
+          <div class="d-flex justify-content-between button-row">
+            <button id="percentage" type="button" class="operand-group">
+              &#37;
+            </button>
+            <button id="zero" type="button" class="operand-group">&#48;</button>
+            <button id="decimal" type="button" class="operand-group">&#46;</button>
+            <button id="equal" type="button">&#61;</button>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+
+      <section id="stopwatch">
+        <h1 class="text-center">Stopwatch</h1>
+        <div class="container2">
+
+          <div id="time">
+            <span class="digits" id="hour">
+              00</span>
+            <span class="text"> Hr </span>
+            <span class="digits" id="minute">
+              00</span>
+            <span class="text"> Min </span>
+            <span class="digits" id="second">
+              00</span>
+            <span class="text"> Sec </span>
+            <span class="digits" id="count">
+              00</span>
+          </div>
+          <div id="buttons">
+            <button class="btn1" id="start">
+              Start </button>
+            <button class="btn2" id="stop">
+              Stop </button>
+            <button class="btn3" id="reset">
+              Reset </button>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="clock">
+
+        <h1 class="text-center">Digital Clock</h1>
+        <div style="text-align:center;padding:1em 0;">
+          <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/country/in"><span
+                style="color:gray;">Current local time in</span><br />India</a></h3> <iframe
+            src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FKolkata"
+            width="100%" height="115" frameborder="0" seamless></iframe>
+        </div>
+      </section>
+
+      <section id="weather">
+        <br>
+        <br>
+        <br>
+        <h1 class="text-center">Real time Weather</h1>
+        <br>
+        <br>
+        <script>
+          (function (d, s, id) {
+            if (d.getElementById(id)) {
+              if (window.__TOMORROW__) {
+                window.__TOMORROW__.renderWidget();
+              }
+              return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+          })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow" data-location-id="133449" data-language="EN" data-unit-system="METRIC" data-skin="light"
+          data-widget-type="upcoming" style="padding-bottom:22px;position:relative;">
+          <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank"
+            style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+            <img alt="Powered by the Tomorrow.io Weather API"
+              src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="18" />
+          </a>
+        </div>
+      </section>
+
+      <section id="counter">
+        <br>
+        <br>
+        <br>
+        <h1 class="text-center">Counter</h1>
+        <br>
+        <div class="counter-up">
+
+          <div class="content">
+
+            <div class="box">
+
+              <div class="icon"><i class="fa fa-history"></i></div>
+
+              <div class="counter" data-count="150">150</div>
+
+              <div class="text">Global Locations</div>
+
+            </div>
+
+
+
+            <div class="box">
+
+              <div class="icon"><i class="fa fa-gift"></i></div>
+
+              <div class="counter" data-count="500">500</div>
+
+              <div class="text">Completed Projects</div>
+
+            </div>
+
+            <div class="box">
+
+              <div class="icon"><i class="fa fa-users"></i></div>
+
+              <div class="counter" data-count="4500">4500</div>
+
+              <div class="text">Happy Clients</div>
+
+            </div>
+
+
+
+            <div class="box">
+
+              <div class="icon"><i class="fa fa-trophy"></i></div>
+
+              <div class="counter" data-count="27500">27,500</div>
+
+              <div class="text">Consultants Deployed</div>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+      </section>
+      <section id="counter-page">
+        <a href='https://www.free-counters.org/'>https://www.Free-Counters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=315d01165686be5d2a14e9afcb519f788a618a1b'></script>
+        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1088839/t/2"></script>
+      </section>
+
+      <section id="contact">
+        <br><br>
+        <br>
+        <div class="container mt-3 contactContent">
+          <h1 class="text-center">Contact Me</h1>
+          <br>
+          <p class="text-center">Mobile no:- <b>9765095590</b></p>
+          <p class="text-center">email id:- <b>vipulsawant033@gmail.com</b></p>
+          <p class="text-center">LinkedIn:- <a
+              href="https://www.linkedin.com/in/vipul-sawant-033" target="_blank"><b>www.linkedin.com/in/vipul-sawant-033</b></a></p>
+
+        </div>
+      </section>
+
+
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src='https://code.jquery.com/jquery-3.7.0.js'></script>
+  <!-- Data Table JS -->
+  <script src='https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js'></script>
+  <script src='https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js'></script>
+  <script src='https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js'></script>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="npscript.js"></script>
+</body>
+
+</html>
